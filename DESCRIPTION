@@ -1,0 +1,46 @@
+Package: FIELDimageR
+Title: A Tool to Analyze Orthomosaic Images From Agricultural Field Trials
+Version: 0.3.3
+Authors@R: 
+    c(person(given = "Filipe",
+             family = "Matias",
+             role = c("cre", "aut"),
+             email = "filipematias23@gmail.com"))
+Description: A compilation of functions to analyze orthomosaic images 
+  from research fields. To prepare the image it first allows to crop the image, remove soil 
+  and weeds and rotate the image. The package also builds a plot shapefile in order to extract 
+  information for each plot to evaluate different wavelengths, vegetation indices, stand count, 
+  canopy percentage, and plant height.
+License: GPL-3 + file LICENSE
+biocViews:
+Imports: 
+    EBImage,
+    attempt,
+    config (>= 0.3.1),
+    DT,
+    fftwtools,
+    git2r,
+    glue,
+    DescTools,
+    methods,
+    raster,
+    rgdal,
+    scales,
+    sp,
+    xml2,
+    foreach,
+    doParallel,
+    plyr,
+    processx,
+    grDevices,
+    spatialEco
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Author: Filipe Matias [cre, aut]
+Maintainer: Filipe Matias <filipematias23@gmail.com>
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
